@@ -17,12 +17,19 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_second, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position){
-        holder.id=setText(JsonData.get(position).getName());
+        holder.id.setText(JsonData.get(position).getId());
+        holder.login.setText(JsonData.get(position).getLogin());
+        holder.temp1.setText(JsonData.get(position).getTemp1());
+        holder.temp2.setText(JsonData.get(position).getTemp2());
+        holder.temp3.setText(JsonData.get(position).getTemp3());
     }
+
+    @Override
+    public int getItemCount(){return JsonData.size();}
 }

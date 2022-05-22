@@ -14,7 +14,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public TextView temp3;
 
 
-    public JsonData(@NonNull View itemView){
+    public ViewHolder(@NonNull View itemView){
         super(itemView);
         id = itemView.findViewById(R.id.id);
         login = itemView.findViewById(R.id.login);
@@ -22,4 +22,5 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         temp2 = itemView.findViewById(R.id.temp2);
         temp3 = itemView.findViewById(R.id.temp3);
     }
+
 }
