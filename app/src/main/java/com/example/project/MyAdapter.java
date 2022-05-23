@@ -12,7 +12,9 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
     private List<JsonData> JsonData;
-    public MyAdapter(ArrayList<JsonData> JsonData){this.JsonData = JsonData;}
+    public MyAdapter(ArrayList<JsonData> JsonData){
+        this.JsonData = JsonData;
+    }
 
     @NonNull
     @Override
@@ -26,10 +28,12 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.id.setText(JsonData.get(position).getID());
         holder.company.setText(JsonData.get(position).getCompany());
         holder.name.setText(JsonData.get(position).getName());
-        holder.size.setText(JsonData.get(position).getSize());
-        holder.cost.setText(JsonData.get(position).getCost());
+        holder.size.setText(String.valueOf(JsonData.get(position).getSize()));
+        holder.cost.setText(String.valueOf(JsonData.get(position).getCost()));
     }
 
     @Override
-    public int getItemCount(){return JsonData.size();}
+    public int getItemCount(){
+        return JsonData.size();
+    }
 }

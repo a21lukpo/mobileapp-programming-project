@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/id"
+        android:id="@+id/company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -15,11 +15,11 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/company"
+        android:id="@+id/id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/id"
+        app:layout_constraintTop_toBottomOf="@+id/company"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/company"
+        app:layout_constraintTop_toBottomOf="@+id/id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
