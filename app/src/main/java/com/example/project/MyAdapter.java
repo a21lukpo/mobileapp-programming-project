@@ -23,11 +23,12 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position){
-        holder.id.setText(JsonData.get(position).getId());
-        holder.login.setText(JsonData.get(position).getLogin());
-        holder.temp1.setText(JsonData.get(position).getTemp1());
-        holder.temp2.setText(JsonData.get(position).getTemp2());
-        holder.temp3.setText(JsonData.get(position).getTemp3());
+        holder.id.setText(JsonData.get(position).getID());
+        holder.type.setText(JsonData.get(position).getType());
+        holder.company.setText(JsonData.get(position).getCompany());
+        holder.name.setText(JsonData.get(position).getName());
+        holder.size.setText(JsonData.get(position).getSize());
+        holder.cost.setText(JsonData.get(position).getCost());
     }
 
     @Override

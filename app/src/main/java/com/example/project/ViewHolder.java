@@ -8,19 +8,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
     public TextView id;
-    public TextView login;
-    public TextView temp1;
-    public TextView temp2;
-    public TextView temp3;
+    public TextView type;
+    public TextView company;
+    public TextView name;
+    public TextView size;
+    public TextView cost;
 
 
     public ViewHolder(@NonNull View itemView){
         super(itemView);
         id = itemView.findViewById(R.id.id);
-        login = itemView.findViewById(R.id.login);
-        temp1 = itemView.findViewById(R.id.temp1);
-        temp2 = itemView.findViewById(R.id.temp2);
-        temp3 = itemView.findViewById(R.id.temp3);
+        type = itemView.findViewById(R.id.type);
+        company = itemView.findViewById(R.id.company);
+        name = itemView.findViewById(R.id.name);
+        size = itemView.findViewById(R.id.size);
+        cost = itemView.findViewById(R.id.cost);
     }
 
 }

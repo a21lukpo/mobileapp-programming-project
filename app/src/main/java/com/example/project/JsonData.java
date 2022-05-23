@@ -2,57 +2,65 @@ package com.example.project;
 
 public class JsonData {
 
-    private String id;
-    private String login;
-    private String temp1;
-    private String temp2;
-    private String temp3;
+    private String ID;
+    private String type;
+    private String company;
+    private String name;
+    private String size;
+    private String cost;
 
     public JsonData(String id, String login, String temp1, String temp2, String temp3){
-        this.id = id;
-        this.login = login;
-        this.temp1 = temp1;
-        this.temp2 = temp2;
-        this.temp3 = temp3;
+        this.ID = id;
+        this.type = type;
+        this.company = company;
+        this.name = name;
+        this.size = size;
+        this.cost = cost;
     }
 
-    public String getId() {
-        return id;
+    public String getID() {
+        return ID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setID(String id) {
+        this.ID = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getType() {
+        return type;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getTemp1() {
-        return temp1;
+    public String getCompany() {
+        return company;
     }
 
-    public void setTemp1(String temp1) {
-        this.temp1 = temp1;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
-    public String getTemp2() {
-        return temp2;
+    public String getName() {
+        return name;
     }
 
-    public void setTemp2(String temp2) {
-        this.temp2 = temp2;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTemp3() {
-        return temp3;
+    public String getSize() { return size; }
+
+    public void setSize(String size) {
+        this.size = size;
     }
 
-    public void setTemp3(String temp3) {
-        this.temp3 = temp3;
+    public String getCost() {
+        return cost;
+    }
+
+    public void setCost(String cost) {
+        this.cost = cost;
     }
 }
