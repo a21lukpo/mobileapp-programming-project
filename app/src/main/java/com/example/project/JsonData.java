@@ -5,10 +5,10 @@ public class JsonData {
     private String ID;
     private String company;
     private String name;
-    private String size;
-    private String cost;
+    private int size;
+    private int cost;
 
-    public JsonData(String id, String login, String temp1, String temp2, String temp3){
+    public JsonData(String id, String company, String name, int size, int cost){
         this.ID = id;
         this.company = company;
         this.name = name;
@@ -40,17 +40,17 @@ public class JsonData {
         this.name = name;
     }
 
-    public String getSize() { return size; }
+    public int getSize() { return size; }
 
-    public void setSize(String size) {
+    public void setSize(int size) {
         this.size = size;
     }
 
-    public String getCost() {
+    public int getCost() {
         return cost;
     }
 
-    public void setCost(String cost) {
+    public void setCost(int cost) {
         this.cost = cost;
     }
 }
