@@ -3,7 +3,6 @@ package com.example.project;
 public class JsonData {
 
     private String ID;
-    private String type;
     private String company;
     private String name;
     private String size;
@@ -11,7 +10,6 @@ public class JsonData {
 
     public JsonData(String id, String login, String temp1, String temp2, String temp3){
         this.ID = id;
-        this.type = type;
         this.company = company;
         this.name = name;
         this.size = size;
@@ -24,14 +22,6 @@ public class JsonData {
 
     public void setID(String id) {
         this.ID = id;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public String getCompany() {

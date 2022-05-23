@@ -24,7 +24,6 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position){
         holder.id.setText(JsonData.get(position).getID());
-        holder.type.setText(JsonData.get(position).getType());
         holder.company.setText(JsonData.get(position).getCompany());
         holder.name.setText(JsonData.get(position).getName());
         holder.size.setText(JsonData.get(position).getSize());
